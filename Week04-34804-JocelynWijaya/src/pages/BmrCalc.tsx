@@ -10,16 +10,17 @@ import { useRef, useState } from 'react';
 
 import BmiControls from '../components/BmiControls';
 import InputControl from '../components/InputControl';
+import BmrResult from '../components/BmrResult';
 
 const BmrCalc: React.FC = () => {
     const [error, setError] = useState<string>();
   
     const [calculatedBMR, setCalculatedBMR] = useState<number>();
-    const [sedentary, setSedentary] = useState<Number>();
-    const [ex3Times, setEx3Times] = useState<Number>();
-    const [ex5Times, setEx5Times] = useState<Number>();
-    const [exDaily, setExDaily] = useState<Number>();
-    const [intense, setIntense] = useState<Number>();
+    const [sedentary, setSedentary] = useState<number>();
+    const [ex3Times, setEx3Times] = useState<number>();
+    const [ex5Times, setEx5Times] = useState<number>();
+    const [exDaily, setExDaily] = useState<number>();
+    const [intense, setIntense] = useState<number>();
     
     const [calcUnits, setCalcUnits] = useState<'cmkg'|'ftlbs'>('cmkg');
     const [sex, setSex] = useState<'male'|'female'>('male');
@@ -97,7 +98,7 @@ const BmrCalc: React.FC = () => {
           <IonHeader>
             <IonToolbar>
               <IonTitle>BMR Calculator</IonTitle>
-              <IonButton slot="start">
+              <IonButton slot="start" fill='clear'>
                   <IonBackButton defaultHref="home"></IonBackButton>
               </IonButton>
             </IonToolbar>
@@ -149,38 +150,7 @@ const BmrCalc: React.FC = () => {
             </IonRow>
             <BmiControls onCalculate={calculateBMR} onReset={resetInputs}/>
             {calculatedBMR && sedentary && ex3Times && ex5Times && exDaily && intense &&
-              <IonRow>
-                  <IonCard>
-                    <IonCardContent className="ion-text-center">
-                      <h2>BMR = {calculatedBMR.toFixed(2)} kalori/hari</h2>
-                      <h2>Kalori harian yang dibutuhkan berdasarkan tingkat aktivitas</h2>
-                      <IonRow>
-                        <IonCol className="ion-text-left" size='9'><h2><b>Tingkat Aktivitas</b></h2></IonCol>
-                        <IonCol><h2><b>Kalori</b></h2></IonCol>
-                      </IonRow>
-                      <IonRow>
-                        <IonCol className="ion-text-left" size='9'><h2>Sedentary: little or no excercise</h2></IonCol>
-                        <IonCol><h2>{sedentary.toFixed(2)}</h2></IonCol>
-                      </IonRow>
-                      <IonRow>
-                        <IonCol className="ion-text-left" size='9'><h2>Exercise 1-3 times/week</h2></IonCol>
-                        <IonCol><h2>{ex3Times.toFixed(2)}</h2></IonCol>
-                      </IonRow>
-                      <IonRow>
-                        <IonCol className="ion-text-left" size='9'><h2>Exercise 4-5 times/week</h2></IonCol>
-                        <IonCol><h2>{ex5Times.toFixed(2)}</h2></IonCol>
-                      </IonRow>
-                      <IonRow>
-                        <IonCol className="ion-text-left" size='9'><h2>Daily exercise or intense exercise 4-5 times/week</h2></IonCol>
-                        <IonCol><h2>{exDaily.toFixed(2)}</h2></IonCol>
-                      </IonRow>
-                      <IonRow>
-                        <IonCol className="ion-text-left" size='9'><h2>Intense xercise 6-7 times/week</h2></IonCol>
-                        <IonCol><h2>{intense.toFixed(2)}</h2></IonCol>
-                      </IonRow>
-                    </IonCardContent>
-                  </IonCard>
-              </IonRow>}             
+              <BmrResult bmrResult={calculatedBMR} sedentary={sedentary} ex3Times={ex3Times} ex5Times={ex5Times} exDaily={exDaily} intense={intense}></BmrResult>}             
           </IonGrid>
         </IonApp>
       </>

@@ -80,7 +80,7 @@ const BmiCalc: React.FC = () => {
         <IonApp>
           <IonHeader>
             <IonToolbar>
-                <IonButton slot="start">
+                <IonButton slot="start" fill='clear'>
                   <IonBackButton defaultHref="home"></IonBackButton>
                 </IonButton>
                 <IonTitle>BMI Calculator</IonTitle>
