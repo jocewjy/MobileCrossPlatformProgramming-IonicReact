@@ -1,3 +1,18 @@
+.ion-card-success{
+    --background: #2dd36f;
+    --color: white;
+}
+
+.ion-card-warning{
+    --background: #ffc409;
+    --color: white;
+}
+
+.ion-card-danger{
+    --background: #eb445a;
+    --color: white;
+}
+
 #result h2{
     font-size: 1rem;
 }
