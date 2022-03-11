@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { ban, create, trashSharp } from "ionicons/icons";
 
 export const FRIENDS_DATA = [
-    {id: 'f1', name: 'John Thor', avatar: 'https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/01/thor-and-celestials.jpg'},
-    {id:'f2', name: 'John Ness', avatar: 'https://feeds.abplive.com/onecms/images/uploaded-images/2021/07/21/5eaefdb7d9ccffe2bf9baba97fd16423_original.jpg'},
-    {id: 'f3', name: 'John Doe', avatar: 'https://i.pinimg.com/originals/ec/cf/cc/eccfccd39dd40980b33b644108dd19ac.jpg'}
+    { id: 'f1', name: 'John Thor', avatar: 'https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2021/09/10/3357968484.jpg' },
+    { id: 'f2', name: 'John Ness', avatar: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Hoaxed_photo_of_the_Loch_Ness_monster.jpg/230px-Hoaxed_photo_of_the_Loch_Ness_monster.jpg' },
+    { id: 'f3', name: 'John Doe', avatar: 'https://images.unsplash.com/photo-1522787126632-aa89815837ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9lfGVufDB8fDB8fA%3D%3D&w=1000&q=80' }
 ];
 
 const Meet: React.FC = () => {
