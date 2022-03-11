@@ -28,6 +28,8 @@ import MeetTabs from './pages/MeetTabs';
 import SpamTabs from './pages/SpamTabs';
 import Settings from './pages/Settings';
 
+setupIonicReact();
+
 const App: React.FC = () => (
   <IonApp>
     <h2>Hello World!</h2>
