@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "307478151084",
+    "project_id": "ionic-firebase-5a38d",
+    "storage_bucket": "ionic-firebase-5a38d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307478151084:android:f92e6862b74c9e00634409",
+        "android_client_info": {
+          "package_name": "com.jocelynwijaya.week12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307478151084-vm87d1o1fn17emph3eh08vds0ah22co8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp459qBFU35FrrYi0ce4EPE7s62tut-Fg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307478151084-vm87d1o1fn17emph3eh08vds0ah22co8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
