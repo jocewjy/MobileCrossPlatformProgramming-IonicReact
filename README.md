@@ -1,5 +1,2 @@
 # IF670AL
- Mobile Cross-Platform Programming Lab
-
-All files were without node_modules.
-Files submitted to E-Learning may have bugs, please refer to this repository for fixed project
+A repository of weekly assignments for Mobile Cross-Platform Programming (Lab) course. Ionic-React was used as framework.
